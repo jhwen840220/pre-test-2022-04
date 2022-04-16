@@ -39,7 +39,7 @@ const RoomAllocation = ({ guest, room }: Props) => {
 
   return (
     <>
-      <div className='w-1/5 p-3 rounded border border-gray-300'>
+      <div className='w-1/5 p-3 rounded border border-gray-300 bg-white'>
         <p className='text-lg font-bold mb-3'>住客人數：{guest} 人／{room} 房</p>
         <p className='rounded p-3 text-sm text-gray-500 border border-cyan-200 bg-cyan-50'>尚未分配人數：{lastGuestCount} 人</p>
         {Object.keys(roomSetting).map(roomIndex => {
