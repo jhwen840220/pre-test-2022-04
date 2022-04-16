@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack server --mode=development --hot",
-    "build": "webpack --mode=production --output dist",
+    "build": "webpack --mode=production",
     "build:analyzer": "webpack --mode=production --color --profile"
   },
   "dependencies": {
