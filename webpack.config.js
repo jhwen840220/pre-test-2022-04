@@ -29,10 +29,6 @@ const config = {
         exclude: /node_modules/,
         use: ['ts-loader'],
       },
-      // {
-      //   test: /\.s?css$/,
-      //   use: ['style-loader', 'css-loader', 'postcss-loader'],
-      // },
       {
         test: /\.s?css$/,
         use: [
@@ -41,10 +37,6 @@ const config = {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              // modules: {
-              //   mode: 'local',
-              //   localIdentName: '[name]_[local]-[hash:base64:5]',
-              // },
             },
           },
           'postcss-loader',
@@ -52,7 +44,7 @@ const config = {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-              additionalData: '', // if you need any sass mixins can be put here
+              additionalData: '',
             },
           },
         ],
